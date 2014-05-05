@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>hello-backbonejs</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="/javascripts/lib/jquery-min.js"></script>
+    <script type="text/javascript" src="/javascripts//lib/underscore-min.js"></script>
+    <script type="text/javascript" src="/javascripts/lib/backbone-min.js"></script>
+    <script type="text/javascript" src="/javascripts/bkhelloworld.js"></script>
+    Hey dude whatsup
+  </body>
+  </html>

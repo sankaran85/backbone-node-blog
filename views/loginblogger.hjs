@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Blogger</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Login to Your Blogger</h1>
+   <form method="POST" action="Welcomeblogger">
+    <input type="text" name="userName"></input>
+    <input type="submit" name="Login" value="Login"></input>
+   </form>
+  </body>
+</html>

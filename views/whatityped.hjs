@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>hello-backbonejs</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="/build/extplugins.js"></script>
+    <script type="text/javascript" src="/javascripts/bkwhatityped.js"></script>
+    <input type="text" name="listmytype" class="whtitype"></input>
+    <label class="whthetyped"></label>
+  </body>
+  </html>

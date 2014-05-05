@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Post</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src="/javascripts/lib/lazyload.js"></script>
+    <script type="text/javascript" src="/javascripts/common.js"></script>
+  </head>
+  <body onload="lazyloadjscss();">
+    <h1>My Post</h1>
+    <form method="POST" action="blogit">
+    <input type="text" name="mypost"></input>
+    <input type="submit" name="post" value="POST"></input>
+  </form>
+    <p>Your Viewing {{user}} Comments, <a href="/logout">Logout</a></p>
+    <ul>
+      {{#mycomments}}
+       <li id="{{id}}"> {{comment}} @ {{created_at}} <input type="button" class="deletecomment" name="delete" value="X" identify="{{id}}"></input></li> 
+      {{/mycomments}}
+    </ul>
+  </body>
+</html>

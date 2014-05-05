@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Post</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src="/build/extplugins.js"></script>
+    <script type="text/javascript" src="/collections/bloggerpostlist.js"></script>
+    <script type="text/javascript" src="/model/blogger.js"></script>
+    <script type="text/javascript" src="/javascripts/blogger.js"></script>
+  </head>
+<body>
+  <div class="mypost">
+    <div class="postform">
+      <h1>My Blogger</h1>
+      <form id="postform">
+        <input type="text" name="title"></input>
+        <input type="text" name="story"></input>
+        <input type="submit" name="post" value="POST"></input>
+      </form>
+    </div>
+    <div class="bloggerlist">
+        <p>Your Viewing {{user}} Comments, <a href="/logout">Logout</a></p>
+        <ul>
+          {{#mypost}}
+           <li id="{{_id}}">
+            <b>{{title}} </b> 
+            <p>- "{{story}}"</p>
+            <span class="posttime">@ {{created_at}} </span><input type="button" class="deletepost" name="delete" value="X" identify="{{_id}}"></input>
+          </li> 
+          {{/mypost}}
+        </ul>
+    </div>
+  </div>
+  <script type="text/tempate" id="posttemp">
+    <div id="<%= _id %>">
+            <b><%= title %> </b> 
+            <p>- "<%= story %>"</p>
+            <span class="posttime">@ <%= created_at %> </span><input type="button" class="deletepost" name="delete" value="X" identify="<%= _id %>"></input>
+    </div>
+  </script>
+</body>
+</html>
