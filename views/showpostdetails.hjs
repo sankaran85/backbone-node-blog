@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Post</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+   {{#showpost}} 
+    <h1>Post {{title}} of {{user}} </h1>
+    <div>
+       
+          <ul>
+            <li><b>Title:</b> {{title}}</li> 
+            <li><b>Story:</b> {{story}}</li>
+            <li><b>Created@:</b> {{created_at}}</li>
+          </ul>
+
+    </div>
+    <a href="/goback"><< Back</a>
+     {{/showpost}}
+  </body>
+</html>

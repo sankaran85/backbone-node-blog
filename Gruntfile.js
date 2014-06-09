@@ -10,7 +10,7 @@ module.exports = function(grunt) {
           banner: '/*A SAMPLE GRUNT AND BACKBONE APPLICATION */\n'
       },
       dist: {
-        src: ['<%= pkg.gruntjs %>/jquery-min.js','<%= pkg.gruntjs %>/underscore-min.js','<%= pkg.gruntjs %>/backbone-min.js','<%= pkg.gruntjs %>/lazyload.js'],
+        src: ['<%= pkg.gruntjs %>/jquery-min.js','<%= pkg.gruntjs %>/underscore-min.js','<%= pkg.gruntjs %>/backbone-min.js'],
         dest: 'public/build/extplugins.js'
       }
     },

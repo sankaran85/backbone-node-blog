@@ -44,13 +44,17 @@ app.get('/logout',routes.logout);
 
 app.get('/backbone',routes.backbone);
 //backbone example
-app.get('/whatityped',routes.bkwhatityped)
+app.get('/whatityped',routes.bkwhatityped);
 //blogger 
 app.get('/myblogger',routes.loginblogger);
 app.post('/Welcomeblogger',routes.welcomeblogger);
 app.get('/Welcomeblogger',routes.welcomeblogger);
-app.post('/postit',routes.savepost);
-app.del('/postit/:id',routes.deletepost);
+app.get('/getpostlist',routes.getpostlist);
+app.post('/post',routes.savepost);
+app.del('/post/del/:id',routes.deletepost);
+app.get('/clearallpost',routes.clearallpost);
+app.get('/showpost/:id',routes.showpost);
+app.get('/goback',routes.welcomeblogger);
 
 
 http.createServer(app).listen(app.get('port'), function(){
