@@ -28,7 +28,9 @@ About
   Dependcenies : Node and Mongodb 
  
   1.clone the repo https://github.com/sankaran85/backbone-node-blog.git
+  
   2.cd backbone-node-blog
+  
   3.npm install 
   
   Now Ur Done !!!! now run the below command to start the server
