@@ -35,8 +35,9 @@ About
   
   Now Ur Done !!!! now run the below command to start the server
   
-  4. node app.js 
+    node app.js 
   
+  /*****************************************************************************************************/
   
   Inbox me @ , sankaran85@gmail.com
   
